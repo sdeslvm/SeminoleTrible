@@ -37,7 +37,7 @@ struct LoadingOverlay: View {
                 VStack(alignment: .center, spacing: 20) {
                     Text("Loading: \(Int(progress * 100))%")
                         .font(.system(size: 45, weight: .bold))
-                        .foregroundColor(.green)
+                        .foregroundColor(.white)
                         .shadow(radius: 2)
                     
                     // Горизонтальный прогресс-бар
@@ -49,7 +49,7 @@ struct LoadingOverlay: View {
                         
                         Rectangle()
                             .frame(width: CGFloat(progress) * 300, height: 12)
-                            .foregroundColor(.green)
+                            .foregroundColor(.white)
                             .cornerRadius(8)
                             .animation(.easeInOut(duration: 0.3), value: progress)
                     }
