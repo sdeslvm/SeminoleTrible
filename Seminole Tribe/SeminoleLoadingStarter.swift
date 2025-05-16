@@ -63,8 +63,8 @@ struct LoadingOverlay: View {
                         .blur(radius: 3)
                 )
                 .overlay(
-                    RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.green.opacity(0.6), lineWidth: 1)
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.gray.opacity(0.2), lineWidth: 1)
                 )
                 .padding(.bottom, 80)
             }
